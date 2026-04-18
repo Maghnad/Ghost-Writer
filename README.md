@@ -180,5 +180,20 @@ The project includes pre-built analytics queries in `db_manager.py`:
 | Scheduler | APScheduler |
 
 ---
+## Dashboard Preview
 
+### Bias Map
+![Bias Map](screenshots/Bias_Map.png)
+
+### Sentiment Trends
+![Sentiment Trends](screenshots/Sentiment_Trends.png)
+
+### Emotion Analysis
+![Emotion Radar](screenshots/Emotion_Radar.png)
+
+### Coverage Heatmap
+![Coverage Heatmap](screenshots/Coverage_Heatmap.png)
+
+### Entity Deep Dive
+![Entity Deep Dive](screenshots/Entity_Dive.png)
 *Built as a data engineering + NLP portfolio project.*
