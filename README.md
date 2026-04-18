@@ -189,7 +189,7 @@ The project includes pre-built analytics queries in `db_manager.py`:
 ![Sentiment Trends](screenshots/Sentiment_Trends.png)
 
 ### Emotion Analysis
-![Emotion Radar](screenshots/Emotion_Radar.png)
+![Emotion Radar](screenshots/Emotional_Radar.png)
 
 ### Coverage Heatmap
 ![Coverage Heatmap](screenshots/Coverage_Heatmap.png)
