@@ -1,0 +1,41 @@
+# Ghost Writer — Dependencies
+# Install: pip install -r requirements.txt
+
+# ─── Data Ingestion ───
+feedparser>=6.0.0
+newspaper3k>=0.2.8
+lxml_html_clean          # required by newspaper3k on newer lxml
+
+# ─── NLP / Sentiment ───
+transformers>=4.35.0
+torch>=2.0.0             # CPU-only is fine: pip install torch --index-url https://download.pytorch.org/whl/cpu
+vaderSentiment>=3.3.2
+textblob>=0.17.0
+spacy>=3.7.0
+
+# ─── Database ───
+sqlalchemy>=2.0.0
+psycopg2-binary>=2.9.0   # only needed for PostgreSQL; remove if using SQLite
+
+# ─── Dashboard ───
+streamlit>=1.28.0
+plotly>=5.18.0
+pandas>=2.0.0
+numpy>=1.24.0
+
+# ─── Scheduler ───
+apscheduler>=3.10.0
+
+# ────────────────────────────────────────
+# POST-INSTALL STEPS:
+#
+# 1. Download SpaCy English model:
+#    python -m spacy download en_core_web_sm
+#
+# 2. Download TextBlob corpora:
+#    python -m textblob.download_corpora
+#
+# 3. (Optional) For better NER accuracy:
+#    python -m spacy download en_core_web_trf
+#    Then update SPACY_MODEL in config.py
+# ────────────────────────────────────────
